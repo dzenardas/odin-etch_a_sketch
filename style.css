@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
     /*outline: auto red;*/
 }
 
@@ -9,20 +10,50 @@ body {
     align-items: center;
 }
 
+.interaction {
+    margin-bottom: 5px;
+}
+
 .container {
-    width: 900px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
     border: 3px solid;
+    background: white;
 }
 
 .square {
-    width: calc(100% / 16);
-    height: calc(100% / 16);
     border: 1px solid black;
 }
 
 .square:hover {
     background-color: lightgray;
+}
+
+#newGrid {
+    margin: 5px;
+}
+
+#resetGrid {
+    margin: 5px;
+    margin-left: 80px;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
