@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Etch-a-sketch</h1>
+    <div class="main-container">
+        <h1>Etch-a-sketch</h1>
 
-    <div class="interaction">
-        <input type="number" id="gridSizeInput" min="1" max="100" value="16">
-        <button id="newGrid">New Grid</button>
-        <button id="resetGrid">Reset Grid</button>
+        <div class="interaction">
+            <input type="number" id="gridSizeInput" min="1" max="100" value="16">
+            <button id="newGrid">New Grid</button>
+            <button id="resetGrid">Reset Grid</button>
+        </div>
+     
+        <div id="container" class="container"></div>
+
+        <div class="knobs">
+            <div class="knob"></div>
+            <div class="knob"></div>
+        </div>
+        
+        <div class="footer-container">
+            <footer>
+                <p>Made by <a href="https://github.com/dzenardas" target="_blank">@dzenardas</a></p>
+            </footer>
+        </div>
     </div>
- 
-    <div id="container" class="container"></div>
 
-    <footer>
-        <p>Made by <a href="https://github.com/dzenardas" target="_blank">@dzenardas</a></p>
-    </footer>
-    
     <script src="main.js"></script>
 </body>
 </html>
